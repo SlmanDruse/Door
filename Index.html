@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainBackground">
+        <div class="content">
+
+            <div class="image">
+                <div class="wrapper">
+                    <img class= "doorimage" src="image/image1.jpg" >
+                    <div id="left-door" class="door">
+                        <img class="left-door-image" src="image/L1.jpg">
+                    </div>
+                    <div id="right-door" class="door">
+                        <img class="right-door-image" src="image/R1.jpg">
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="text">
+                <h3 class="Qustion">متى توحدت المملكة العربية السعودية؟</h3>
+                <P class="Submit">***تم حل السؤال بنجاح***</P>
+                <div class="submitInter">
+                    <button class="button" id="button1" >1351 هـ</button>
+                    <button class="button" id="button2" >1352 هـ</button>
+                    <button class="button" id="button3" >1353 هـ</button>
+                    <!-- <input class="inputDate" id="inputDate" type="number" > -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="icons">
+            <img id="door1" onclick="changImage(this.src , 1)" src="image/1.jpg">
+            <img id="door2" onclick="changImage(this.src , 2)" src="image/2.jpg">
+            <img id="door3" onclick="changImage(this.src , 3)" src="image/3.jpg">
+            <img id="door4" onclick="changImage(this.src , 4)" src="image/4.jpg">
+            <img id="door5" onclick="changImage(this.src , 5)" src="image/5.jpg">
+            <img id="door6" onclick="changImage(this.src , 6)" class="Box" src="image/close box.png">
+        </div>
+    </div>
+
+    <audio class="myAudio" id="myAudio" controls>
+        <source src="image/sound1.ogg" type="audio/ogg">
+        <source src="image/sound1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
