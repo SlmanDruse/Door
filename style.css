@@ -19,16 +19,7 @@
     align-items: center;
   }*/
   
-  .container{
-    background-image: url("image/bg1.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit: fill;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
+
 
   .content{
     display: flex;
@@ -53,20 +44,9 @@
     margin: 5px 0px;
   }
 
-  .content .text .Qustion {
-    margin: 10px 0px;
-    color: black;
-    font-size: 32px;
-  }
 
-  .content .text .submitInter .button{
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #9b3f06;
-    border-radius: 8px;
-    padding: 8px 16px;
-    margin: 5px 0px;
-  }
+
+
 
   /* .content .text .submitInter .button:hover{
     background-color: #e45c07;
@@ -79,17 +59,88 @@
     margin-left: 4px;
   }
 
-  content .image{
-    width: 30%;
-  }
+  
 
   @media screen and (max-width: 780px) {
+    /* mobile Section */
+    .container{
+      background-image: url("image/bg1.jpg");
+      background-color: #9b3f06;
+      background-size: 100%;
+      background-repeat: repeat;
+      object-fit: fill;
+      min-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content .text .Qustion {
+    margin: 10px 0px;
+    color: black;
+    font-size: 18px;
+  }
+
+    .content .text .submitInter .button{
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #9b3f06;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 5px 0px;
+  }
+
+  content .image{
+    width: 10%;
+  }
+
     .icons {
       display: none;
+    }
+
+    .wrapper {
+      height: 220px;
+      width: 180px;
+      /* border: 5px solid #61412D; */
+      position: relative;
+      /* 3D */
+      perspective: 1000px;
     }
   }
 
   @media screen and (min-width: 781px) {
+    /* Desktop Section */
+    .container{
+      background-image: url("image/bg1.jpg");
+      background-color: #9b3f06;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: fill;
+      min-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content .text .Qustion {
+    margin: 10px 0px;
+    color: black;
+    font-size: 32px;
+  }
+
+    .content .text .submitInter .button{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #9b3f06;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 5px 0px;
+  }
+
+    content .image{
+    width: 30%;
+  }
+
     .icons {
       position: absolute;
       bottom: 32px;
@@ -109,18 +160,20 @@
       transform: scale(1.2);
       
     }
+
+    .wrapper {
+      height: 300px;
+      width: 250px;
+      /* border: 5px solid #61412D; */
+      position: relative;
+      /* 3D */
+      perspective: 1000px;
+    }
   }
 
  
 
-  .wrapper {
-    height: 300px;
-    width: 250px;
-    /* border: 5px solid #61412D; */
-    position: relative;
-    /* 3D */
-    perspective: 1000px;
-  }
+
   
   img {
     width: 100%;
